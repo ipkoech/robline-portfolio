@@ -62,7 +62,7 @@ export default function Navbar() {
 
         <div className="flex items-center space-x-4">
           <ThemeToggle />
-          
+
           {/* Mobile menu button */}
           <button
             className="md:hidden p-2 rounded-md hover:bg-accent"
@@ -93,7 +93,6 @@ export default function Navbar() {
           </nav>
         </div>
       )}
-      </div>
     </header>
   )
 }
