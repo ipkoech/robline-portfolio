@@ -13,6 +13,12 @@ const CodeEditor = () => {
   const [output, setOutput] = useState("")
   const [isFlipped, setIsFlipped] = useState(false)
   const [showDetails, setShowDetails] = useState(false)
+  const [mounted, setMounted] = useState(false)
+
+  // Ensure component is mounted before rendering random elements
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   // Developer details
   const developer = {
@@ -174,7 +180,7 @@ const CodeEditor = () => {
             <div className="absolute top-0 left-0 w-full h-full opacity-10">
               <div className="absolute top-5 left-5 text-9xl opacity-20">{"{"}</div>
               <div className="absolute bottom-5 right-5 text-9xl opacity-20">{"}"}</div>
-              {Array.from({ length: 20 }).map((_, i) => (
+              {mounted && Array.from({ length: 20 }).map((_, i) => (
                 <div
                   key={i}
                   className="absolute text-xs opacity-30"
