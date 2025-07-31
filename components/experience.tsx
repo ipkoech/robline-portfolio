@@ -7,9 +7,23 @@ import { Badge } from "@/components/ui/badge"
 
 const experiences = [
   {
+    title: "Co-founder & Lead Developer",
+    company: "NoteBook+",
+    period: "May 2025 – Present",
+    description: [
+      "Co-founded and lead the development of NoteBook+, an AI-powered note-taking and knowledge management platform designed to revolutionize how professionals organize and interact with their information.",
+      "Architected a scalable full-stack solution using Flask for robust backend APIs and Next.js for a responsive, modern frontend, ensuring optimal performance across all devices.",
+      "Implemented advanced AI integration leveraging GPT models for intelligent note summarization, content generation, and semantic search capabilities, enhancing user productivity by 40%.",
+      "Deployed and managed infrastructure on Google Cloud Platform (GCP) and Microsoft Azure, implementing auto-scaling, load balancing, and comprehensive monitoring for 99.9% uptime.",
+      "Led a cross-functional development team, establishing agile methodologies, code review processes, and CI/CD pipelines that reduced deployment time by 60%.",
+      "Designed and implemented secure user authentication, real-time collaboration features, and data synchronization across multiple platforms and devices.",
+    ],
+    skills: ["Flask", "Next.js", "Python", "TypeScript", "GCP", "Azure", "AI/ML", "OpenAI API", "PostgreSQL", "Redis", "Docker", "Kubernetes"],
+  },
+  {
     title: "Lead Software Engineer",
     company: "Revenue Catalyst Ltd.",
-    period: "Aug 2023 – Present",
+    period: "Aug 2023 – Feb 2025",
     description: [
       "Architected and developed backend systems using PHP (Laravel), Python (Flask), and Ruby on Rails, designing APIs and services for a hospitality and travel technology platform.",
       "Built and maintained dynamic front-end applications with Angular and React, creating intuitive user interfaces and improving client-side performance.",
@@ -57,9 +71,9 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-20 px-4 md:px-8 max-w-7xl mx-auto bg-muted/30">
+    <section id="experience" className="py-12 md:py-20 px-4 md:px-8 max-w-7xl mx-auto bg-muted/30">
       <SectionHeading>Work Experience</SectionHeading>
-      <div className="space-y-8">
+      <div className="space-y-6 md:space-y-8">
         {experiences.map((exp, index) => (
           <motion.div
             key={index}
@@ -72,15 +86,15 @@ export default function Experience() {
               <CardHeader>
                 <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
                   <div>
-                    <CardTitle className="text-xl md:text-2xl">{exp.title}</CardTitle>
-                    <CardDescription className="text-lg">
+                    <CardTitle className="text-lg md:text-xl lg:text-2xl">{exp.title}</CardTitle>
+                    <CardDescription className="text-base md:text-lg">
                       {exp.company} | {exp.period}
                     </CardDescription>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
-                <ul className="list-disc pl-5 mb-4 space-y-2 text-muted-foreground">
+                <ul className="list-disc pl-5 mb-4 space-y-2 text-sm md:text-base text-muted-foreground">
                   {exp.description.map((item, i) => (
                     <li key={i}>{item}</li>
                   ))}
@@ -100,4 +114,3 @@ export default function Experience() {
     </section>
   )
 }
-

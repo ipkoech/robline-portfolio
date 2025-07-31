@@ -55,15 +55,11 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
   html {
     @apply scroll-smooth;
   }
-}
-
-/* Smooth scrolling for anchor links */
-html {
-  scroll-behavior: smooth;
 }
 
 /* Custom scrollbar */
@@ -81,6 +77,31 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-primary/70;
+}
+
+/* Improved focus styles for accessibility */
+*:focus-visible {
+  @apply outline-2 outline-offset-2 outline-primary;
+}
+
+/* Better text rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Responsive typography */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
 }
 
 /* 3D card flip utilities */

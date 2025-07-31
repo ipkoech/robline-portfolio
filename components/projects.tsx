@@ -11,6 +11,15 @@ import Link from "next/link"
 
 const projects = [
   {
+    title: "NoteBook+ AI Platform",
+    description:
+      "Co-founded and developed NoteBook+, an AI-powered note-taking and knowledge management platform. Built with Flask backend and Next.js frontend, featuring intelligent note summarization, semantic search, and real-time collaboration. Deployed on GCP and Azure with auto-scaling infrastructure serving thousands of users.",
+    image: "/placeholder.svg?height=600&width=800",
+    technologies: ["Flask", "Next.js", "Python", "TypeScript", "GCP", "Azure", "OpenAI API", "PostgreSQL", "Redis"],
+    demoLink: "https://notebookplusai.com",
+    codeLink: "#",
+  },
+  {
     title: "AI-Driven Recommendation Engine",
     description:
       "Designed a machine learning-based recommendation system to analyze user viewing patterns and provide personalized content suggestions on a streaming platform. This AI-driven feature improved user engagement by delivering more relevant content and increasing time spent on the platform.",
@@ -46,22 +55,13 @@ const projects = [
     demoLink: "#",
     codeLink: "#",
   },
-  {
-    title: "WhatsApp Business API Integration",
-    description:
-      "Integrated WhatsApp Business API into a customer communication platform to enable automated order updates and support chats. This project allowed businesses to engage customers on a familiar messaging channel, resulting in faster response times and higher customer satisfaction through instant notifications and query handling.",
-    image: "/placeholder.svg?height=600&width=800",
-    technologies: ["Node.js", "Express", "MongoDB", "WhatsApp API", "AWS Lambda"],
-    demoLink: "#",
-    codeLink: "#",
-  },
 ]
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 px-4 md:px-8 max-w-7xl mx-auto">
+    <section id="projects" className="py-12 md:py-20 px-4 md:px-8 max-w-7xl mx-auto">
       <SectionHeading>Featured Projects</SectionHeading>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         {projects.map((project, index) => (
           <motion.div
             key={index}
@@ -71,7 +71,7 @@ export default function Projects() {
             viewport={{ once: true }}
           >
             <Card className="h-full flex flex-col overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="relative h-48 w-full overflow-hidden">
+              <div className="relative h-40 md:h-48 w-full overflow-hidden">
                 <Image
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
@@ -81,7 +81,7 @@ export default function Projects() {
                 />
               </div>
               <CardHeader>
-                <CardTitle>{project.title}</CardTitle>
+                <CardTitle className="text-lg md:text-xl">{project.title}</CardTitle>
                 <div className="flex flex-wrap gap-2 mt-2">
                   {project.technologies.slice(0, 3).map((tech, i) => (
                     <Badge key={i} variant="secondary">
@@ -94,9 +94,31 @@ export default function Projects() {
                 </div>
               </CardHeader>
               <CardContent className="flex-grow">
-                <CardDescription className="text-sm text-muted-foreground">{project.description}</CardDescription>
+                <CardDescription className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                  {project.description}
+                </CardDescription>
               </CardContent>
               
+              {(project.demoLink !== "#" || project.codeLink !== "#") && (
+                <div className="p-6 pt-0">
+                  <div className="flex gap-2">
+                    {project.demoLink !== "#" && (
+                      <Button asChild size="sm" className="flex-1">
+                        <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
+                          View Live
+                        </a>
+                      </Button>
+                    )}
+                    {project.codeLink !== "#" && (
+                      <Button asChild variant="outline" size="sm" className="flex-1">
+                        <a href={project.codeLink} target="_blank" rel="noopener noreferrer">
+                          View Code
+                        </a>
+                      </Button>
+                    )}
+                  </div>
+                </div>
+              )}
             </Card>
           </motion.div>
         ))}

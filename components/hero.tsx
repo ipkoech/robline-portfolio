@@ -291,12 +291,16 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="flex flex-col justify-center"
           >
-            <h2 className="text-2xl md:text-3xl font-medium mb-4 text-blue-400">Full Stack Developer</h2>
-            <p className="text-lg mb-8 text-gray-300">
-              Seasoned developer with expertise in Python, PHP, JavaScript, and Ruby. Passionate about building
-              exceptional digital experiences and architecting scalable, robust systems on cloud platforms.
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium mb-6 text-blue-400">
+              Full Stack Developer & Technical Leader
+            </h2>
+            <p className="text-base md:text-lg lg:text-xl mb-8 text-gray-300 leading-relaxed">
+              Accomplished Full Stack Developer and Co-founder with 4+ years of experience leading high-impact software development projects. 
+              Proven expertise in architecting scalable enterprise solutions using Python, PHP, JavaScript, and Ruby ecosystems. 
+              Successfully founded and scaled technology ventures while mentoring development teams and delivering complex applications 
+              that serve thousands of users across cloud platforms including AWS, GCP, and Azure.
             </p>
-            <div className="flex flex-wrap gap-4 mb-8">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-4 mb-8">
               <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
                 <Link href="#contact">Get in Touch</Link>
               </Button>
@@ -309,7 +313,7 @@ export default function Hero() {
                 <Link href="#projects">View Projects</Link>
               </Button>
             </div>
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
               <Button
                 variant="ghost"
                 size="icon"
@@ -351,7 +355,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="h-[500px] w-full"
+            className="h-[400px] md:h-[500px] w-full"
           >
             <CodeEditor />
           </motion.div>
@@ -369,4 +373,3 @@ export default function Hero() {
     </section>
   )
 }
-
