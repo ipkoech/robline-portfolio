@@ -18,7 +18,7 @@ const stats = [
   },
   {
     icon: Code2,
-    value: "50+",
+    value: "10+",
     label: "Projects Delivered",
     color: "text-green-500",
     bgColor: "bg-green-500/10",

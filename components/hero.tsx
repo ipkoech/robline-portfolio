@@ -42,7 +42,7 @@ const CodeEditor = () => {
     frameworks: ["Flask", "Django", "Laravel", "React", "Angular", "Node.js"],
     passion: "Building exceptional digital experiences",
     experience: "4+ years",
-    projects: "50+ projects delivered",
+    projects: "10+ projects delivered",
     location: "Nairobi, Kenya",
     availability: "Available for Projects",
   }
@@ -56,7 +56,7 @@ const CodeEditor = () => {
     "    this.experience = '4+ years';",
     "    this.location = 'Nairobi, Kenya';",
     "    this.skills = ['Python', 'PHP', 'JavaScript', 'Ruby'];",
-    "    this.frameworks = ['Flask', 'Django', 'Laravel', 'React'];",
+    "    this.frameworks = ['Flask', 'Django', 'Laravel', 'React', 'Angular', 'NextJs'];",
     "    this.passion = 'Building exceptional digital experiences';",
     "    this.availability = 'Available for Projects';",
     "  }",
@@ -66,7 +66,7 @@ const CodeEditor = () => {
     "  }",
     "",
     "  getStats() {",
-    "    return { projects: '50+', clients: '25+', uptime: '99.9%' };",
+    "    return { projects: '10+', clients: '10+', uptime: '99.9%' };",
     "  }",
     "}",
     "",
@@ -119,7 +119,7 @@ const CodeEditor = () => {
       setIsRunning(true)
       const timer = setTimeout(() => {
         setOutput(
-          `Hi! I'm ${developer.name}, a Full Stack Developer & Co-founder\n{ projects: '50+', clients: '25+', uptime: '99.9%' }`,
+          `Hi! I'm ${developer.name}, a Full Stack Developer & Co-founder\n{ projects: '10+', clients: '10+', uptime: '99.9%' }`,
         )
         setIsRunning(false)
         if (manualRun) {
@@ -414,11 +414,11 @@ const CodeEditor = () => {
                 className="grid grid-cols-3 gap-4 w-full max-w-md mb-6"
               >
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">50+</div>
+                  <div className="text-2xl font-bold text-primary">10+</div>
                   <div className="text-xs text-muted-foreground">Projects</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-secondary">25+</div>
+                  <div className="text-2xl font-bold text-secondary">10+</div>
                   <div className="text-xs text-muted-foreground">Clients</div>
                 </div>
                 <div className="text-center">
@@ -476,7 +476,7 @@ export default function Hero() {
         ></div>
       </div>
 
-      <div className="container mx-auto max-w-7xl relative z-10">
+      <div className="container mx-auto max-w-7xl relative z-10 mt-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left column - Enhanced Description */}
           <motion.div
@@ -644,7 +644,7 @@ export default function Hero() {
                 <span>Nairobi, Kenya</span>
               </div>
               <span>•</span>
-              <span>20+ Projects Delivered</span>
+              <span>10+ Projects Delivered</span>
               <span>•</span>
               <span>99.9% Uptime</span>
             </motion.div>

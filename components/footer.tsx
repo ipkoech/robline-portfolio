@@ -37,7 +37,7 @@ export default function Footer() {
       color: "hover:text-blue-600",
     },
     {
-      href: "https://x.com/robby_yego",
+      href: "https://x.com/uncowaethiopia",
       icon: Twitter,
       label: "Twitter",
       color: "hover:text-blue-400",
@@ -198,7 +198,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Copyright */}
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <span>© {currentYear} Robline Kipkoech Yegon. All rights reserved.</span>
+              <span>© {currentYear} Evataa Inc. All rights reserved.</span>
               <span className="hidden md:inline">•</span>
               <span className="flex items-center gap-1">
                 Made with <Heart className="h-4 w-4 text-red-500 animate-pulse" /> and{" "}
@@ -216,23 +216,6 @@ export default function Footer() {
               <ArrowUp className="h-4 w-4 mr-2 group-hover:-translate-y-1 transition-transform" />
               Back to Top
             </Button>
-          </div>
-
-          {/* Additional Info */}
-          <div className="mt-6 pt-6 border-t border-border/30">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
-              <div className="flex flex-wrap gap-4">
-                <span>Built with Next.js & TypeScript</span>
-                <span>•</span>
-                <span>Deployed on Vercel</span>
-                <span>•</span>
-                <span>Designed with Tailwind CSS</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                <span>All systems operational</span>
-              </div>
-            </div>
           </div>
         </motion.div>
       </div>

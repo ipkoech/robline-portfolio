@@ -18,14 +18,14 @@ const skillCategories = [
     bgColor: "bg-blue-500/10",
     borderColor: "border-blue-500/20",
     skills: [
-      { name: "Python", level: 95, years: 4, projects: 18 },
-      { name: "JavaScript (ES6+)", level: 92, years: 4, projects: 23 },
-      { name: "PHP", level: 88, years: 3, projects: 20 },
-      { name: "TypeScript", level: 85, years: 2, projects: 15 },
+      { name: "Python", level: 95, years: 4, projects: 9 },
+      { name: "JavaScript (ES6+)", level: 92, years: 4, projects: 10 },
+      { name: "PHP", level: 88, years: 3, projects: 10 },
+      { name: "TypeScript", level: 85, years: 2, projects: 7 },
       { name: "Ruby", level: 80, years: 2, projects: 8 },
-      { name: "HTML5", level: 98, years: 4, projects: 20 },
-      { name: "CSS3", level: 90, years: 4, projects: 20 },
-      { name: "SQL", level: 87, years: 3, projects: 16 },
+      { name: "HTML5", level: 98, years: 4, projects: 10 },
+      { name: "CSS3", level: 90, years: 4, projects: 10 },
+      { name: "SQL", level: 87, years: 3, projects: 10 },
     ],
   },
   {
@@ -36,16 +36,16 @@ const skillCategories = [
     bgColor: "bg-green-500/10",
     borderColor: "border-green-500/20",
     skills: [
-      { name: "Flask", level: 94, years: 4, projects: 18 },
+      { name: "Flask", level: 94, years: 4, projects: 9 },
       { name: "Django", level: 90, years: 3, projects: 6 },
       { name: "Laravel", level: 88, years: 3, projects: 8 },
-      { name: "Next.js", level: 92, years: 2, projects: 14 },
-      { name: "React", level: 90, years: 3, projects: 12 },
+      { name: "Next.js", level: 92, years: 2, projects: 4 },
+      { name: "React", level: 90, years: 3, projects: 6 },
       { name: "Node.js (Express)", level: 85, years: 2, projects: 3 },
       { name: "Angular", level: 82, years: 2, projects: 10 },
       { name: "Vue.js", level: 75, years: 1, projects: 6 },
       { name: "Ruby on Rails", level: 78, years: 2, projects: 8 },
-      { name: "Tailwind CSS", level: 95, years: 2, projects: 12 },
+      { name: "Tailwind CSS", level: 95, years: 2, projects: 6 },
       { name: "FastAPI", level: 80, years: 1, projects: 5 },
     ],
   },
@@ -57,9 +57,9 @@ const skillCategories = [
     bgColor: "bg-purple-500/10",
     borderColor: "border-purple-500/20",
     skills: [
-      { name: "PostgreSQL", level: 90, years: 3, projects: 16 },
+      { name: "PostgreSQL", level: 90, years: 3, projects: 10 },
       { name: "MySQL", level: 88, years: 4, projects: 9 },
-      { name: "MongoDB", level: 82, years: 2, projects: 12 },
+      { name: "MongoDB", level: 82, years: 2, projects: 6 },
       { name: "Redis", level: 85, years: 2, projects: 8 },
       { name: "SQLite", level: 80, years: 3, projects: 5 },
       { name: "Firebase", level: 75, years: 1, projects: 8 },
@@ -75,14 +75,14 @@ const skillCategories = [
     borderColor: "border-orange-500/20",
     skills: [
       { name: "AWS (EC2, S3, Lambda)", level: 88, years: 3, projects: 9 },
-      { name: "Google Cloud Platform", level: 85, years: 2, projects: 12 },
+      { name: "Google Cloud Platform", level: 85, years: 2, projects: 6 },
       { name: "Microsoft Azure", level: 80, years: 2, projects: 8 },
       { name: "Docker", level: 87, years: 3, projects: 4 },
       { name: "Kubernetes", level: 75, years: 1, projects: 6 },
       { name: "CI/CD pipelines", level: 82, years: 2, projects: 4 },
       { name: "Linux administration", level: 85, years: 3, projects: 7 },
-      { name: "Nginx", level: 80, years: 2, projects: 15 },
-      { name: "Apache", level: 78, years: 2, projects: 12 },
+      { name: "Nginx", level: 80, years: 2, projects: 7 },
+      { name: "Apache", level: 78, years: 2, projects: 6 },
       { name: "Terraform", level: 70, years: 1, projects: 4 },
     ],
   },
@@ -100,7 +100,7 @@ const skillCategories = [
       { name: "Machine Learning", level: 75, years: 2, projects: 5 },
       { name: "TensorFlow", level: 70, years: 1, projects: 4 },
       { name: "Scikit-learn", level: 72, years: 1, projects: 3 },
-      { name: "AI-powered Applications", level: 88, years: 2, projects: 12 },
+      { name: "AI-powered Applications", level: 88, years: 2, projects: 6 },
     ],
   },
   {
@@ -113,14 +113,14 @@ const skillCategories = [
     skills: [
       { name: "RESTful API design", level: 95, years: 4, projects: 13 },
       { name: "GraphQL", level: 78, years: 2, projects: 3 },
-      { name: "Microservices architecture", level: 85, years: 2, projects: 12 },
+      { name: "Microservices architecture", level: 85, years: 2, projects: 6 },
       { name: "Agile/Scrum methodology", level: 90, years: 4, projects: 10 },
-      { name: "Git version control", level: 95, years: 4, projects: 18 },
+      { name: "Git version control", level: 95, years: 4, projects: 9 },
       { name: "Test-Driven Development", level: 82, years: 3, projects: 10 },
       { name: "UI/UX Design", level: 80, years: 3, projects: 10 },
-      { name: "Performance Optimization", level: 88, years: 3, projects: 12 },
+      { name: "Performance Optimization", level: 88, years: 3, projects: 6 },
       { name: "Security Best Practices", level: 85, years: 3, projects: 4 },
-      { name: "Code Review", level: 92, years: 4, projects: 20 },
+      { name: "Code Review", level: 92, years: 4, projects: 10 },
     ],
   },
 ]
@@ -267,7 +267,7 @@ export default function Skills() {
                     </div>
                     <div className="text-center">
                       <div className="text-2xl font-bold text-green-500">
-                        {activeCategory.skills.reduce((acc, skill) => acc + skill.projects, 0)}
+                        10+
                       </div>
                       <div className="text-xs text-muted-foreground">Total Projects</div>
                     </div>

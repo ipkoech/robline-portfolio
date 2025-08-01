@@ -76,7 +76,7 @@ const affiliations = [
   {
     organization: "IEEE Computer Society",
     role: "Professional Member",
-    period: "2019–Present",
+    period: "2022–Present",
     description:
       "Active member of the world's premier organization for computing professionals, participating in knowledge sharing, continuous learning, and advancing technology innovation.",
     activities: ["Technical Paper Reviews", "Industry Conferences", "Professional Development", "Networking Events"],
@@ -84,18 +84,6 @@ const affiliations = [
     color: "from-purple-500 to-pink-600",
     bgColor: "bg-purple-500/10",
     borderColor: "border-purple-500/20",
-  },
-  {
-    organization: "Kenya Software Developers Association",
-    role: "Active Member",
-    period: "2020–Present",
-    description:
-      "Contributing to the local tech community through mentorship, knowledge sharing, and supporting the growth of software development in Kenya.",
-    activities: ["Mentorship Programs", "Tech Talks", "Community Projects", "Skills Development"],
-    icon: Users,
-    color: "from-teal-500 to-cyan-600",
-    bgColor: "bg-teal-500/10",
-    borderColor: "border-teal-500/20",
   },
 ]
 
